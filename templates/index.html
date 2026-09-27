@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Pintar</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✓ Tugas Harian</h1>
+            <button id="theme-toggle">🌓 Mode Gelap</button>
+        </header>
 
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="Apa yang ingin kamu kerjakan?" required autocomplete="off">
+            <select id="priority-input">
+                <option value="low">Rendah</option>
+                <option value="medium">Sedang</option>
+                <option value="high">Tinggi</option>
+            </select>
+            <button type="submit">Tambah</button>
+        </form>
+
+        <div class="loader" id="loader">Mengambil data dari awan...</div>
+
+        <ul id="todo-list">
+            <!-- Item daftar akan di-render oleh JavaScript -->
+        </ul>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
